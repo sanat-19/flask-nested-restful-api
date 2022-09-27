@@ -1,6 +1,6 @@
-from flask_restful import  Resource,reqparse, Api, marshal,fields
+from flask_restful import  Resource
 from new_models import *
-from flask import jsonify, request, abort, make_response
+from flask import jsonify, request
 from marshmallow import validate
 from schema import *
 import logging
