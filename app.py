@@ -1,10 +1,9 @@
-from flask import Flask, jsonify, redirect, request, make_response, render_template
+from flask import Flask
 from flask_migrate import Migrate
 from new_models import db
 from schema import *
-from flask_restful import Resource, Api, marshal
+from flask_restful import Api
 from restful import *
-from marshmallow import validate, ValidationError
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:solitaire@localhost:5432/final_task' 
